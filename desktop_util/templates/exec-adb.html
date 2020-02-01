@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Execute ADB Commands</h1>
+    <hr>
+    <h3>Type your adb command in below field and press 'Enter'/Execute button</h3>
+    <form method="POST">
+        <input type="text" name="text">
+        <input type="submit" value="execute">
+    </form>
+    <p id="para" class="card mu-2 p-2">{{data}}</p>
+</div>
+{% endblock content %}
